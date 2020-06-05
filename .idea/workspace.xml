@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1324c6e9-e930-41b7-8e36-209d061d1d70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GeoFlink/spatialOperators/KNNQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GeoFlink/spatialOperators/KNNQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GeoFlink/StreamingJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GeoFlink/StreamingJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GeoFlink/spatialStreams/SpatialStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GeoFlink/spatialStreams/SpatialStream.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,41 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1YyOR29HT6G1ZaCDz7XGKatnqwC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MFBranchGeoFlink/GeoFlink/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MFEventTimeGeoFlink/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="StreamingJob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -99,19 +80,22 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="777" y="377" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583995374219">
       <screen x="65" y="24" width="2495" height="1416" />
     </state>
     <state x="777" y="377" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.2495.1416@65.24.2495.1416" timestamp="1583995374219" />
+    <state x="1100" y="477" key="FileChooserDialogImpl" timestamp="1590547074755">
+      <screen x="65" y="24" width="2495" height="1416" />
+    </state>
+    <state x="1100" y="477" key="FileChooserDialogImpl/65.24.2495.1416@65.24.2495.1416" timestamp="1590547074755" />
     <state width="2449" height="154" key="GridCell.Tab.0.bottom" timestamp="1584005500553">
       <screen x="65" y="24" width="2495" height="1416" />
     </state>
@@ -132,6 +116,10 @@
       <screen x="65" y="24" width="2495" height="1416" />
     </state>
     <state x="1430" y="403" key="Maven.ArtifactSearchDialog/65.24.2495.1416@65.24.2495.1416" timestamp="1583914390039" />
+    <state x="1089" y="634" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590575831876">
+      <screen x="65" y="24" width="2495" height="1416" />
+    </state>
+    <state x="1089" y="634" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/65.24.2495.1416@65.24.2495.1416" timestamp="1590575831876" />
     <state x="975" y="326" width="672" height="678" key="search.everywhere.popup" timestamp="1583994370929">
       <screen x="65" y="24" width="2495" height="1416" />
     </state>
