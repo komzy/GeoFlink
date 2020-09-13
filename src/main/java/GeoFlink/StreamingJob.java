@@ -261,10 +261,23 @@ public class StreamingJob implements Serializable {
 				break;
 			}
 			case 10:{ // Join Query (Polygon-Polygon)
+				DataStream geoJSONStream  = env.addSource(new FlinkKafkaConsumer<>("NYCBuildingsPolygons", new JSONKeyValueDeserializationSchema(false), kafkaProperties).setStartFromEarliest());
+				// Converting GeoJSON, CSV stream to polygon spatial data stream
+				DataStream<Polygon> spatialPolygonStream = SpatialStream.PolygonStream(geoJSONStream, "GeoJSON", uGrid);
+				//spatialPolygonStream.print();
+
+				//Generating query stream TaxiDrive17MillionGeoJSON
+				//DataStream geoJSONQueryPolygonStream  = env.addSource(new FlinkKafkaConsumer<>("NYCFoursquareCheckIns", new JSONKeyValueDeserializationSchema(false),kafkaProperties).setStartFromLatest());
+				DataStream geoJSONQueryPolygonStream  = env.addSource(new FlinkKafkaConsumer<>("NYCFourSquareCheckIns", new JSONKeyValueDeserializationSchema(false),kafkaProperties).setStartFromEarliest());
+				DataStream<Polygon> queryPolygonStream = SpatialStream.PolygonStream(geoJSONQueryPolygonStream, "GeoJSON", uGrid);
+				//queryPolygonStream.print();
+
+				DataStream<Tuple2<String, String>> spatialJoinStream = JoinQuery.SpatialJoinQuery(spatialPolygonStream, queryPolygonStream,  windowSlideStep, windowSize, radius, uGrid);
+				spatialJoinStream.print();
 				break;
 			}
 			default:
-				System.out.println("Input Unrecognized. Please select option from 1-3.");
+				System.out.println("Input Unrecognized. Please select option from 1-10.");
 		}
 
 
